@@ -1,0 +1,249 @@
+*:not(head, script, dialog) {
+    display: inline-block;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    transition: 0.3s all;
+    vertical-align: top;
+    transition: .25s all;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans',  sans-serif;
+}
+
+:root {
+    --theGreen: #197A30;
+    --theDarkerGreen: #225011;
+    --theGray: rgb(30, 30, 30);
+    --theGreenOpaque: rgba(2, 152, 52, .5);
+	--theBlue: #161827;
+    --theBlueOpaque: rgba(22,24,39, .5);
+    --theWhiteOpaque: rgba(255, 255, 255, .6);
+    --theGrayOpaque: rgba(30, 30, 30, 0.5);
+}
+
+body {
+    /* font-family: "Roboto-Regular", Arial, Helvetica, sans-serif; */
+width: 100% !important;
+}
+
+.troubleshootingMainDiv {
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+}
+
+.troubleshootingMainDiv h1 {
+    
+}
+
+.troubleShootingH1 {
+    padding: 10px;
+}
+
+.mapDiv img {
+    width: 100px;
+    height: 100px;
+}
+
+.mapDiv h1 {
+    
+    padding: 10px;
+}
+
+.mapDiv {
+    display: inline-block;
+    position: relative;
+    margin: 5px;
+    width: 200px;
+}
+
+.mapDiv img {
+}
+
+.mapDiv p {
+    
+}
+
+.productName {
+    padding: 10px;
+    border-bottom: 1px ridge silver;
+    background: var(--theGreen);
+    color: whitesmoke;
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.mapDiv a:hover {
+    background: gray;
+    color: whitesmoke;
+}
+
+@media (max-width: 460px) {
+    .mapDiv {
+        width: 150px;
+    }
+
+    .productName {
+        height: 50px;
+        font-size: 14px;
+    }
+}
+
+.solutionsDiv {
+    text-align: center;
+}
+
+.mainProblemDescription {
+    width: 99%;
+}
+
+.mainProblemDescription p {
+    max-width: 1000px;
+    padding: 5px;
+    background: var(--theGreen);
+    color: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px silver;
+    border: 1px ridge var(--theDarkerGreen);
+    margin: auto;
+}
+
+
+.navHeader {
+    border-bottom: 1px ridge var(--theGreen);
+    width: 99.9%;
+    border-bottom-left-radius: 10px;
+    position: relative;
+}
+
+.mainNav {
+    width: 80%;
+    height: 70px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.navLogo {
+    padding: 10px;
+    max-width: 150px;
+    background: var(--theGreen);
+    float: left;
+    border-bottom-left-radius: 10px;
+}
+
+.mainNavAnchor {
+    padding: 5px;
+    width: 20%;
+    background: var(--theGray);
+    margin: 8px;
+    color: whitesmoke;
+}
+
+.mainNavAnchor:hover {
+    background: var(--theDarkerGreen);
+}
+
+h2 {
+    padding: 10px;
+    margin: 10px;
+    border-bottom: 1px ridge var(--theGreen);
+    color: var(--theGreen);
+    width: 90%;
+}
+
+.solutionsTitle {
+    max-width: 500px;
+}
+
+.productsListDiv {
+    border: 1px ridge white;
+    box-shadow: 1px 2px 15px silver;
+    border-radius: 10px;
+}
+
+.mapDiv {
+    border: 1px ridge var(--theGreen);
+    box-shadow: 1px 2px 15px silver;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.mapDiv:hover {
+    background: whitesmoke;
+
+}
+
+
+/* CSS For Pop-Up Display Card */
+.firstLevelDialogue {
+    padding: 10px;
+    margin: auto;
+    border: 1px ridge var(--theGreen);
+    border-radius: 5px;
+    box-shadow: 1px 2px 10px silver;
+    z-index: 2;
+    background: whitesmoke;
+    position: fixed;
+    margin-bottom: 50%;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+
+}
+
+.closeModalButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 2.5px;
+    background: red;
+    cursor: pointer;
+    border: none;
+    padding: 1px 5px;
+    border-radius: 50px;
+    color: whitesmoke;
+    text-shadow: 1px 2px 5px black;
+    font-size: 20px;
+}
+
+.firstLevelDialogue h3 {
+    width: 99%;
+    
+}
+
+.holdsLoop {
+    padding: 5px;
+    width: 99%;
+}
+
+.modalProblemLink {
+    padding: 5px;
+    background: var(--theGreen);
+    color: whitesmoke;
+    border: 1px ridge var(--theDarkerGreen);
+    width: 100%;
+    cursor: pointer;
+    margin-top: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px silver;
+}
+
+.modalProblemLink:hover {
+    background: var(--theDarkerGreen);
+}
+
+.problemSolutions {
+    background: white;
+    width: 99%;
+    max-width: 800px;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px silver;
+    padding: 10px;
+    border-bottom: 1px ridge var(--theBlue);
+}
